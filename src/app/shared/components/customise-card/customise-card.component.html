@@ -1,0 +1,16 @@
+<div class="customise-card row py-2 mb-3">
+    <div class="col-3">
+        <span *ngIf="config.startDate">{{config.startDate}} - {{ config.endDate }}</span>
+    </div>
+    <div class="col-9">
+        <title *ngIf="config.designation && config.companyName">{{ config.designation }}, {{ config.companyName }}</title>
+        <p *ngIf="config.workDtl" [innerHTML]="config.workDtl"></p>
+        <title *ngIf="config.title">{{ config.title }}</title>
+        <p *ngIf="config.description" [innerHTML]="config.description" ></p>
+        <sub *ngIf="config.additionalInfo">{{ config.additionalInfo }}</sub>
+        <div class="">
+            <button *ngFor="let tech of config.techUsed" class="btn btn-secondary m-2">{{ tech }}</button>
+        </div>
+        
+    </div>
+</div>

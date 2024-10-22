@@ -1,0 +1,38 @@
+.sidenav {
+    width: 75%;
+    margin: auto;
+
+    // height: 100vh;
+    .navs {
+        .line {
+            display: block;
+            width: 40px;
+            border-top: 1px solid var(--white-color);
+            margin-right: 10px;
+        }
+
+        p {
+            cursor: pointer;
+
+            &:hover {
+                color: var(--white-color);
+
+                .line {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    .contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    .highlight {
+        color: var(--white-color);
+        .line {
+            width: 50px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<div class="sidenav py-5">
+    <h1>{{ constant.USERNAME }}</h1>
+    <title>{{ constant.HEAD_INFO }}</title>
+    <p class="info">{{ constant.HEAD_INFO }}</p>
+
+    <div class="navs">
+        <p *ngFor="let name of constant.NAVBARS; let idx = index" class="d-flex align-items-center" [class.highlight]="isHighlighted(idx+1)" (click)="onNavClick(idx+1)">
+            <span class="line"></span> {{ name }}
+        </p>
+    </div>
+
+    <div class="contacts mt-5">
+        <a class="px-1"><i class="fab fa-github-square"></i></a>
+        <a class="px-1"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="px-1"><i class="fab fa-instagram-square"></i></a>
+        <a class="px-1"><i class="fab fa-twitter-square"></i></a>
+    </div>
+</div>

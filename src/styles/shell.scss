@@ -1,0 +1,28 @@
+* {
+    font-family: var(--global-font);
+    font-size: var(--global-size);
+    overflow: hidden;
+}
+body {
+    background-color: rgb(15 23 42 / var(--bg-opacity));
+    // color: rgb(148 163 184 / var(bg-opacity));
+    color: var(--off-white);
+}
+
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.xy-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.w-100 {
+    width: 100%;
+}
+i {
+    font-size: 25px;
+}
