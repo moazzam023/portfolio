@@ -1,4 +1,15 @@
 .experience {
     width: 75%;
     margin: auto;
+
+    .full-resume {
+
+        a {
+            cursor: pointer;
+            font-size: 20px;
+            &:hover {
+                color: #bbeebb;
+            }
+        }
+    }
 }

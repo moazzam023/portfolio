@@ -2,4 +2,7 @@
     <ng-container *ngFor="let dtl of experienceDtl">
         <app-customise-card [config]="dtl"></app-customise-card>
     </ng-container>
+    <div class="full-resume mt-5 mx-3">
+        <a (click)="downloadResume()">View Full Resume <i class="fas fa-download"></i></a>
+    </div>
 </section>

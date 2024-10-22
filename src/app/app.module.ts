@@ -8,6 +8,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { CustomiseCardComponent } from './shared/components/customise-card/customise-card.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomiseCardComponent } from './shared/components/customise-card/custo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()

@@ -4,7 +4,7 @@
     <p class="info">{{ constant.HEAD_INFO }}</p>
 
     <div class="navs">
-        <p *ngFor="let name of constant.NAVBARS; let idx = index" class="d-flex align-items-center" [class.highlight]="isHighlighted(idx+1)" (click)="onNavClick(idx+1)">
+        <p *ngFor="let name of constant.NAVBARS; let idx = index" class="d-flex align-items-center" [class.highlight]="isHighlighted(idx)" (click)="onNavClick(idx+1)">
             <span class="line"></span> {{ name }}
         </p>
     </div>
