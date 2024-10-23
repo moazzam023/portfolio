@@ -1,4 +1,11 @@
+@import 'mixins';
 .about {
     width: 75%;
     margin: auto;
+}
+
+@include respond-to(sm) {
+    .about {
+        width: 98%;
+    }
 }

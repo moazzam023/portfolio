@@ -1,3 +1,4 @@
+@import 'mixins';
 .sidenav {
     width: 75%;
     margin: auto;
@@ -31,8 +32,15 @@
 
     .highlight {
         color: var(--white-color);
+
         .line {
             width: 50px;
         }
+    }
+}
+
+@include respond-to(sm) {
+    .sidenav {
+        width: 98%;
     }
 }

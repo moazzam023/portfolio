@@ -7,7 +7,7 @@ import { Constant } from '../../commons/constant';
   styleUrl: './sidenav.component.scss'
 })
 export class SidenavComponent {
-  @Input() highlightedTitle!: number
+  @Input() highlightedTitle: number = 0;
   @Output() navClicked = new EventEmitter<number>();
   constant = Constant;
 

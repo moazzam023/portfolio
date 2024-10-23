@@ -1,4 +1,10 @@
+@import 'mixins';
 .projects {
     width: 75%;
     margin: auto;
+}
+@include respond-to(sm) {
+    .projects {
+        width: 98%;
+    }
 }
